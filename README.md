@@ -34,7 +34,7 @@ Soubor .txt a .bin pro každého sportovce. Obsahuje jméno sportovce a zóny te
 
 # Class diagram:
 
-	![alt text](https://github.com/TimotejFasiang/ALG2/blob/main/class_diagram.png?raw=true)
+	![class_diagram.png](https://github.com/TimotejFasiang/ALG2/blob/main/class_diagram.png)
 
 # Javadoc:
 	
