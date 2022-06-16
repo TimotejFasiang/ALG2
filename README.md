@@ -12,24 +12,24 @@ Graf bude viditelný na obrazovce a uloží se také jako vektorovou grafiku ve 
 
 # Funkční specifikace:
 
-	Graf závislosti tepové frekvence na čase
-	Graf závislosti hladiny laktátu na čase
-	Graf tepové frekvence a laktátu v závislosti na čase
-	Soubor s informacemi o zónách srdečního tepu
+Graf závislosti tepové frekvence na čase
+Graf závislosti hladiny laktátu na čase
+Graf tepové frekvence a laktátu v závislosti na čase
+Soubor s informacemi o zónách srdečního tepu
 
 
 # Popis struktury vstupních souborů:
 
-	Soubor s tepovou frekvencí bude soubor hrdata.txt, jehož každý řádek bude obsahovat String jmeno, int Dob, GendercHoice gender, a  číslo, které představuje tepovou frekvenci v b/m, oddělené mezerou.
-	Soubor s laktátem bude soubor lactatedata.txt, jehož každý řádek bude obsahovat String jmeno, int Dob, GendercHoice gender, a  číslo, které představuje hladinu laktátu v mmol/l, oddělené mezerou.
+Soubor s tepovou frekvencí bude soubor hrdata.txt, jehož každý řádek bude obsahovat String jmeno, int Dob, GendercHoice gender, a  číslo, které představuje tepovou frekvenci v b/m, oddělené mezerou.
+Soubor s laktátem bude soubor lactatedata.txt, jehož každý řádek bude obsahovat String jmeno, int Dob, GendercHoice gender, a  číslo, které představuje hladinu laktátu v mmol/l, oddělené mezerou.
 
 
 # Popis struktury výstupních souborů:
 
-	Graf s tepovou frekvencí bude soubor hrGraph.pdf a bude uloženy v \src\main\java\data
-	Graf s laktátem bude soubor lactateGraph.pdf a bude uloženy v \src\main\java\data
-	Graf s tepovou frekvencí a laktátem bude soubor doubleGraph.pdf a bude uloženy v \src\main\java\data
-	Soubor .txt a .bin pro každého sportovce. Obsahuje jméno sportovce a zóny tepové frekvence.
+Graf s tepovou frekvencí bude soubor hrGraph.pdf a bude uloženy v \src\main\java\data
+Graf s laktátem bude soubor lactateGraph.pdf a bude uloženy v \src\main\java\data
+Graf s tepovou frekvencí a laktátem bude soubor doubleGraph.pdf a bude uloženy v \src\main\java\data
+Soubor .txt a .bin pro každého sportovce. Obsahuje jméno sportovce a zóny tepové frekvence.
 
 
 # Class diagram:
@@ -67,16 +67,16 @@ VectorGraphicsEncoder.saveVectorGraphic(chartName, "Directory", VectorGraphicsFo
 .setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE)
 ```
 
-	-chartName je zvolený název objektu grafu
-	-Title je název grafu
-	-X Title je název osy x
-	-Y Title je název osy y
-	-Legend Title je název křivky v legendě
-	-xData je Array s daty X v formatu Double
-	-yData je Array s daty Y v formatu Double
-	-Directory je adresář pro uložení 
+-chartName je zvolený název objektu grafu
+-Title je název grafu
+-X Title je název osy x
+-Y Title je název osy y
+-Legend Title je název křivky v legendě
+-xData je Array s daty X v formatu Double
+-yData je Array s daty Y v formatu Double
+-Directory je adresář pro uložení 
 
 
 ###### Další podrobnosti na: 
-	https://knowm.org/javadocs/xchart/index.html 
-	https://knowm.org/open-source/xchart/xchart-example-code/
+https://knowm.org/javadocs/xchart/index.html 
+https://knowm.org/open-source/xchart/xchart-example-code/
