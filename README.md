@@ -67,16 +67,17 @@ VectorGraphicsEncoder.saveVectorGraphic(chartName, "Directory", VectorGraphicsFo
 .setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE)
 ```
 
--chartName je zvolený název objektu grafu
--Title je název grafu
--X Title je název osy x
--Y Title je název osy y
--Legend Title je název křivky v legendě
--xData je Array s daty X v formatu Double
--yData je Array s daty Y v formatu Double
--Directory je adresář pro uložení 
+	-chartName je zvolený název objektu grafu
+	-Title je název grafu
+	-X Title je název osy x
+	-Y Title je název osy y
+	-Legend Title je název křivky v legendě
+	-xData je Array s daty X v formatu Double
+	-yData je Array s daty Y v formatu Double
+	-Directory je adresář pro uložení 
 
 
 ###### Další podrobnosti na: 
-https://knowm.org/javadocs/xchart/index.html 
+https://knowm.org/javadocs/xchart/index.html
+
 https://knowm.org/open-source/xchart/xchart-example-code/
