@@ -27,7 +27,7 @@ interface PersonInterface {
  */
 public class Athlete implements PersonInterface {
 
-	private int dob;
+	private static int dob;
 	private String name;
 	private GenderChoice gender;
 	private ArrayList<String> hr;
@@ -38,7 +38,7 @@ public class Athlete implements PersonInterface {
 	 *
 	 * @return Returns ArrayList containing training HR zones
 	 */
-	public ArrayList<String> zoneHR() {
+	public static ArrayList<String> zoneHR() {
 		int age = Year.now().getValue() - dob;
 		int maxHR = 220 - age;
 		int up5 = maxHR;
@@ -200,35 +200,6 @@ public class Athlete implements PersonInterface {
 	 * @param name Athlete name
 	 * @param dob Athlete dob
 	 * @param gender Athlete gender
-	 */
-	public Athlete(String name, int dob, GenderChoice gender) {
-		this.name = name;
-		this.dob = dob;
-		this.gender = gender;
-	}
-
-	/**
-	 * Athlete constructor
-	 *
-	 * @param name Athlete name
-	 * @param dob Athlete dob
-	 * @param gender Athlete gender
-	 * @param hr Athlete HR data
-	 */
-	public Athlete(String name, int dob, GenderChoice gender, ArrayList<String> hr) {
-		this.name = name;
-		this.dob = dob;
-		this.gender = gender;
-		this.hr = hr;
-
-	}
-
-	/**
-	 * Athlete constructor
-	 *
-	 * @param name Athlete name
-	 * @param dob Athlete dob
-	 * @param gender Athlete gender
 	 * @param data Athlete HR or Lactate data depending on @param type
 	 * @param type Specifies if @param data is HR or Lactate data
 	 */
@@ -241,25 +212,6 @@ public class Athlete implements PersonInterface {
 		} else if (type == 2) {
 			lactate = data;
 		}
-
-	}
-
-	/**
-	 * Athlete constructor
-	 *
-	 * @param name Athlete name
-	 * @param dob Athlete dob
-	 * @param gender Athlete gender
-	 * @param hr Athlete HR data
-	 * @param lactate Athlete Lactate data
-	 */
-	public Athlete(String name, int dob, GenderChoice gender, ArrayList<String> hr, ArrayList<String> lactate) {
-
-		this.name = name;
-		this.dob = dob;
-		this.gender = gender;
-		this.hr = hr;
-		this.lactate = lactate;
 
 	}
 }

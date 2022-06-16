@@ -1,6 +1,5 @@
 package utils;
 
-import java.time.Year;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,40 +25,6 @@ public class Utils {
 			}
 		}
 		return max;
-	}
-
-	/**
-	 * Calculates training HR zones
-	 *
-	 * @param dob dob
-	 * @return Returns ArrayList containing training HR zones
-	 */
-	public static ArrayList<String> zoneHR(int dob) {
-		int age = Year.now().getValue() - dob;
-		int maxHR = 220 - age;
-		int up5 = maxHR;
-		int down5 = Math.toIntExact((Math.round(0.95 * maxHR)));
-		int up4 = maxHR;
-		int down4 = Math.toIntExact((Math.round(0.90 * maxHR)));
-		int up3 = Math.toIntExact((Math.round(0.87 * maxHR)));
-		int down3 = Math.toIntExact((Math.round(0.95 * maxHR)));
-		int up2 = Math.toIntExact((Math.round(0.85 * maxHR)));
-		int down2 = Math.toIntExact((Math.round(0.75 * maxHR)));
-		int up1 = Math.toIntExact((Math.round(0.75 * maxHR)));
-		int down1 = Math.toIntExact((Math.round(0.65 * maxHR)));
-		String zone1 = ("Zone 1: " + down1 + " - " + up1);
-		String zone2 = ("Zone 2: " + down2 + " - " + up2);
-		String zone3 = ("Zone 3: " + down3 + " - " + up3);
-		String zone4 = ("Zone 4: " + down4 + " - " + up4);
-		String zone5 = ("Zone 5: " + down5 + " - " + up5);
-
-		ArrayList<String> arrayList = new ArrayList<>();
-		arrayList.add(zone1);
-		arrayList.add(zone2);
-		arrayList.add(zone3);
-		arrayList.add(zone4);
-		arrayList.add(zone5);
-		return arrayList;
 	}
 
 	/**

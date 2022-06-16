@@ -169,7 +169,7 @@ public class MainLoop {
 					for (int i = 0; i < athleteList.size(); i++) {
 						name = athleteList.get(i).getName();
 						int dob = athleteList.get(i).getDob();
-						ArrayList<String> zoneHR = Utils.zoneHR(dob);
+						ArrayList<String> zoneHR = Athlete.zoneHR();
 						lactateData = athleteList.get(i).getLactate();
 						Double maxLactate = Utils.maxLactate(lactateData);
 						try {
