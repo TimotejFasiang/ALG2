@@ -1,9 +1,4 @@
 // MENU TESTS
-// MENU TESTS
-// MENU TESTS
-// MENU TESTS
-// MENU TESTS
-// MENU TESTS
 
 
 Test menu: //Standard Input
@@ -48,12 +43,9 @@ Test menu: //Incorrect Input
 Výsledek: "Timotej is an invalid selection. Selection must be a number."
 
 
+
 //ATHLETE TESTS
-//ATHLETE TESTS
-//ATHLETE TESTS
-//ATHLETE TESTS
-//ATHLETE TESTS
-//ATHLETE TESTS
+
 
 Test Athlete: // Standard Input
 
@@ -91,11 +83,7 @@ dfhjk
 Výsledek: gender = null;
 
 
-//HR TESTS
-//HR TESTS
-//HR TESTS
-//HR TESTS
-//HR TESTS
+
 //HR TESTS
 
 
@@ -126,11 +114,7 @@ dhr
 Výsledek: "Couldn't get HR data from files"
 
 
-//LACTATE TESTS
-//LACTATE TESTS
-//LACTATE TESTS
-//LACTATE TESTS
-//LACTATE TESTS
+
 //LACTATE TESTS
 
 
@@ -177,11 +161,7 @@ false
 Výsledek: "Couldn't get lactate data from files"
 
 
-//DOUBLE TESTS
-//DOUBLE TESTS
-//DOUBLE TESTS
-//DOUBLE TESTS
-//DOUBLE TESTS
+
 //DOUBLE TESTS
 
 
