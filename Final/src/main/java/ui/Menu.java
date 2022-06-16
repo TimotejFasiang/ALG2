@@ -48,7 +48,9 @@ public class Menu {
 		System.out.println(" 2) Graph lactate data");
 		System.out.println(" 3) Graph all data");
 		System.out.println(" 4) Output test data");
-		System.out.println(" 5) Close program");
+		System.out.println(" 5) Sort athletes by name");
+		System.out.println(" 6) Sort athletes by dob");
+		System.out.println(" 7) Close program");
 		System.out.println("                                                  ");
 	}
 
@@ -60,12 +62,12 @@ public class Menu {
 	public static int getInp() {
 		int choices = 0;
 		String selected;
-		while (choices != 1 && choices != 2 && choices != 3 && choices != 4 && choices != 5) {
+		while (choices != 1 && choices != 2 && choices != 3 && choices != 4 && choices != 5 && choices != 6 && choices != 7) {
 			System.out.print("Please make your selection: ");
 			selected = sc.nextLine();
 			try {
 				choices = Integer.valueOf(selected);
-				if (choices != 1 && choices != 2 && choices != 3 && choices != 4 && choices != 5) {
+				if (choices != 1 && choices != 2 && choices != 3 && choices != 4 && choices != 5 && choices != 6 && choices != 7) {
 					System.out.println("Invalid selection. Selection must be an option from the menu.");
 				}
 			} catch (NumberFormatException e) {

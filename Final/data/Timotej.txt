@@ -1,0 +1,9 @@
+Timotej
+
+Zone 1: 130 - 150
+Zone 2: 150 - 170
+Zone 3: 190 - 174
+Zone 4: 180 - 200
+Zone 5: 190 - 200
+
+Max Lactate: 6.7

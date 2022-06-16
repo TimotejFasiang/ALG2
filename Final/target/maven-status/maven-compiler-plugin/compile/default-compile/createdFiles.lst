@@ -1,9 +1,12 @@
+utils\Sortbyname.class
 utils\GenderChoice.class
 app\Writer.class
 app\Athlete.class
 ui\Menu.class
 utils\Utils.class
 utils\MenuChoice.class
+utils\Sortbyage.class
 app\MainLoop.class
 app\Retrieval.class
+app\PersonInterface.class
 app\Graph.class
