@@ -45,19 +45,27 @@ Graf bude viditelný na obrazovce a uloží se také jako vektorovou grafiku ve 
 	
 ###### Základní graf lze vytvořit pomocí:
 
-	```XYChart chartName = QuickChart.getChart("Title", "X Title", "Y Title", "Legend Title", xData, yData);```	
+```
+XYChart chartName = QuickChart.getChart("Title", "X Title", "Y Title", "Legend Title", xData, yData);
+```	
 
 ###### Graf lze ukázat pomocí:
 
-	```new SwingWrapper(chartName).displayChart();```
+```
+new SwingWrapper(chartName).displayChart();
+```
 
 ###### Graf lze ukládat pomocí:
 	
-	```VectorGraphicsEncoder.saveVectorGraphic(chartName, "Directory", VectorGraphicsFormat.PDF);```
+```
+VectorGraphicsEncoder.saveVectorGraphic(chartName, "Directory", VectorGraphicsFormat.PDF);
+```
 
 ###### Lze zabránit tomu, aby graf ukončil program, když je uzavřen pomocí:
 
-	```.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE)```
+```
+.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE)
+```
 
 	-chartName je zvolený název objektu grafu
 	-Title je název grafu
